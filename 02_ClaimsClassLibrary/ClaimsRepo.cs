@@ -25,9 +25,25 @@ namespace _02_ClaimsClassLibrary
         }
        
 
-        public void RemoveClaim(int id)
+        public bool RemoveClaim(int id)
         {
+
+            Claims claim = GetClaimById(id);
+                if (claim == null)
+                {
+                   return false;
+                }
+            int initiallist = _listOfclaim.Count;
             _listOfclaim.Dequeue();
+            if(initiallist> _listOfclaim.Count)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+
 
   
 

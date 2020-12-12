@@ -156,11 +156,15 @@ namespace _03_BadgesConsoleApp
             Console.WriteLine("What is the badge number to update ? ");
             int badgeId = int.Parse(Console.ReadLine());
            Badges badge = _badgesrepo.GetBadgeById(badgeId);
-          //Dictionary<int, string> adddoor = new Dictionary<int, string>();
-            foreach(Badges badges in door)
+            //Dictionary<int, string> adddoor = new Dictionary<int, string>();
+            Console.WriteLine("Enter the name of the door you want to add :");
+            string input = Console.ReadLine();
+            Dictionary<Badges, string> addDoor = new Dictionary<Badges, string>();
+            foreach(KeyValuePair<Badges,string> keyvaluepair in addDoor)
             {
-                door.Add(badges); 
+               
             }
+           
             
            
 

@@ -12,3 +12,5 @@ C:\Users\Louda\source\repos\01_CafeConsoleApp\02_ClaimsUnitTestProject\obj\Debug
 C:\Users\Louda\source\repos\01_CafeConsoleApp\02_ClaimsUnitTestProject\obj\Debug\02_ClaimsUnitTestProject.csproj.CopyComplete
 C:\Users\Louda\source\repos\01_CafeConsoleApp\02_ClaimsUnitTestProject\obj\Debug\02_ClaimsUnitTestProject.dll
 C:\Users\Louda\source\repos\01_CafeConsoleApp\02_ClaimsUnitTestProject\obj\Debug\02_ClaimsUnitTestProject.pdb
+C:\Users\Louda\source\repos\01_CafeConsoleApp\02_ClaimsUnitTestProject\bin\Debug\02_ClaimsClassLibrary.dll
+C:\Users\Louda\source\repos\01_CafeConsoleApp\02_ClaimsUnitTestProject\bin\Debug\02_ClaimsClassLibrary.pdb

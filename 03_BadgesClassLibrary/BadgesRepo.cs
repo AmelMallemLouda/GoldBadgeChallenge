@@ -12,7 +12,7 @@ namespace _03_BadgesClassLibrary
        
            public  Dictionary<int, List<string>> _badges = new Dictionary<int, List<string>>();
            public List< Badges>badgesList = new List<Badges>();
-           public List<Door> doors = new List<Door>();
+          
         //Create
         public void AddNewBadge(int badgeid,List<string>doors)
         {
