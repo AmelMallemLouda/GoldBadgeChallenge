@@ -1,0 +1,16 @@
+C:\Users\Louda\source\repos\01_CafeConsoleApp\01_CafeUnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\Louda\source\repos\01_CafeConsoleApp\01_CafeUnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\Louda\source\repos\01_CafeConsoleApp\01_CafeUnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\Louda\source\repos\01_CafeConsoleApp\01_CafeUnitTestProject\bin\Debug\01_CafeUnitTestProject.dll
+C:\Users\Louda\source\repos\01_CafeConsoleApp\01_CafeUnitTestProject\bin\Debug\01_CafeUnitTestProject.pdb
+C:\Users\Louda\source\repos\01_CafeConsoleApp\01_CafeUnitTestProject\bin\Debug\01_CafeClassLibrary.dll
+C:\Users\Louda\source\repos\01_CafeConsoleApp\01_CafeUnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\Louda\source\repos\01_CafeConsoleApp\01_CafeUnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\Louda\source\repos\01_CafeConsoleApp\01_CafeUnitTestProject\bin\Debug\01_CafeClassLibrary.pdb
+C:\Users\Louda\source\repos\01_CafeConsoleApp\01_CafeUnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\Louda\source\repos\01_CafeConsoleApp\01_CafeUnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\Louda\source\repos\01_CafeConsoleApp\01_CafeUnitTestProject\obj\Debug\01_CafeUnitTestProject.csprojAssemblyReference.cache
+C:\Users\Louda\source\repos\01_CafeConsoleApp\01_CafeUnitTestProject\obj\Debug\01_CafeUnitTestProject.csproj.CoreCompileInputs.cache
+C:\Users\Louda\source\repos\01_CafeConsoleApp\01_CafeUnitTestProject\obj\Debug\01_CafeUnitTestProject.csproj.CopyComplete
+C:\Users\Louda\source\repos\01_CafeConsoleApp\01_CafeUnitTestProject\obj\Debug\01_CafeUnitTestProject.dll
+C:\Users\Louda\source\repos\01_CafeConsoleApp\01_CafeUnitTestProject\obj\Debug\01_CafeUnitTestProject.pdb

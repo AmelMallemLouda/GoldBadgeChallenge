@@ -1,0 +1,10 @@
+C:\Users\Louda\source\repos\01_CafeConsoleApp\02_ClaimsConsoleApp\bin\Debug\02_ClaimsConsoleApp.exe.config
+C:\Users\Louda\source\repos\01_CafeConsoleApp\02_ClaimsConsoleApp\bin\Debug\02_ClaimsConsoleApp.exe
+C:\Users\Louda\source\repos\01_CafeConsoleApp\02_ClaimsConsoleApp\bin\Debug\02_ClaimsConsoleApp.pdb
+C:\Users\Louda\source\repos\01_CafeConsoleApp\02_ClaimsConsoleApp\bin\Debug\02_ClaimsClassLibrary.dll
+C:\Users\Louda\source\repos\01_CafeConsoleApp\02_ClaimsConsoleApp\bin\Debug\02_ClaimsClassLibrary.pdb
+C:\Users\Louda\source\repos\01_CafeConsoleApp\02_ClaimsConsoleApp\obj\Debug\02_ClaimsConsoleApp.csprojAssemblyReference.cache
+C:\Users\Louda\source\repos\01_CafeConsoleApp\02_ClaimsConsoleApp\obj\Debug\02_ClaimsConsoleApp.csproj.CoreCompileInputs.cache
+C:\Users\Louda\source\repos\01_CafeConsoleApp\02_ClaimsConsoleApp\obj\Debug\02_ClaimsConsoleApp.csproj.CopyComplete
+C:\Users\Louda\source\repos\01_CafeConsoleApp\02_ClaimsConsoleApp\obj\Debug\02_ClaimsConsoleApp.exe
+C:\Users\Louda\source\repos\01_CafeConsoleApp\02_ClaimsConsoleApp\obj\Debug\02_ClaimsConsoleApp.pdb

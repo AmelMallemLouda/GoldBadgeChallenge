@@ -1,0 +1,6 @@
+C:\Users\Louda\source\repos\01_CafeConsoleApp\02_ClaimsClassLibrary\bin\Debug\02_ClaimsClassLibrary.dll
+C:\Users\Louda\source\repos\01_CafeConsoleApp\02_ClaimsClassLibrary\bin\Debug\02_ClaimsClassLibrary.pdb
+C:\Users\Louda\source\repos\01_CafeConsoleApp\02_ClaimsClassLibrary\obj\Debug\02_ClaimsClassLibrary.csprojAssemblyReference.cache
+C:\Users\Louda\source\repos\01_CafeConsoleApp\02_ClaimsClassLibrary\obj\Debug\02_ClaimsClassLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Louda\source\repos\01_CafeConsoleApp\02_ClaimsClassLibrary\obj\Debug\02_ClaimsClassLibrary.dll
+C:\Users\Louda\source\repos\01_CafeConsoleApp\02_ClaimsClassLibrary\obj\Debug\02_ClaimsClassLibrary.pdb

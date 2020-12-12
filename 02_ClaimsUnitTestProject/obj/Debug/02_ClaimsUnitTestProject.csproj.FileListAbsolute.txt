@@ -1,0 +1,14 @@
+C:\Users\Louda\source\repos\01_CafeConsoleApp\02_ClaimsUnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\Louda\source\repos\01_CafeConsoleApp\02_ClaimsUnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\Louda\source\repos\01_CafeConsoleApp\02_ClaimsUnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\Louda\source\repos\01_CafeConsoleApp\02_ClaimsUnitTestProject\bin\Debug\02_ClaimsUnitTestProject.dll
+C:\Users\Louda\source\repos\01_CafeConsoleApp\02_ClaimsUnitTestProject\bin\Debug\02_ClaimsUnitTestProject.pdb
+C:\Users\Louda\source\repos\01_CafeConsoleApp\02_ClaimsUnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\Louda\source\repos\01_CafeConsoleApp\02_ClaimsUnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\Louda\source\repos\01_CafeConsoleApp\02_ClaimsUnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\Louda\source\repos\01_CafeConsoleApp\02_ClaimsUnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\Louda\source\repos\01_CafeConsoleApp\02_ClaimsUnitTestProject\obj\Debug\02_ClaimsUnitTestProject.csprojAssemblyReference.cache
+C:\Users\Louda\source\repos\01_CafeConsoleApp\02_ClaimsUnitTestProject\obj\Debug\02_ClaimsUnitTestProject.csproj.CoreCompileInputs.cache
+C:\Users\Louda\source\repos\01_CafeConsoleApp\02_ClaimsUnitTestProject\obj\Debug\02_ClaimsUnitTestProject.csproj.CopyComplete
+C:\Users\Louda\source\repos\01_CafeConsoleApp\02_ClaimsUnitTestProject\obj\Debug\02_ClaimsUnitTestProject.dll
+C:\Users\Louda\source\repos\01_CafeConsoleApp\02_ClaimsUnitTestProject\obj\Debug\02_ClaimsUnitTestProject.pdb

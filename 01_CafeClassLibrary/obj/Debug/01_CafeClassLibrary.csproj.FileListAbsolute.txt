@@ -1,0 +1,5 @@
+C:\Users\Louda\source\repos\01_CafeConsoleApp\01_CafeClassLibrary\bin\Debug\01_CafeClassLibrary.dll
+C:\Users\Louda\source\repos\01_CafeConsoleApp\01_CafeClassLibrary\bin\Debug\01_CafeClassLibrary.pdb
+C:\Users\Louda\source\repos\01_CafeConsoleApp\01_CafeClassLibrary\obj\Debug\01_CafeClassLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Louda\source\repos\01_CafeConsoleApp\01_CafeClassLibrary\obj\Debug\01_CafeClassLibrary.dll
+C:\Users\Louda\source\repos\01_CafeConsoleApp\01_CafeClassLibrary\obj\Debug\01_CafeClassLibrary.pdb
