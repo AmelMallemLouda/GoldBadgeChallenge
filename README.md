@@ -9,9 +9,9 @@ The manager of the Cafe wants a new menu item with some options, the menu will b
 
 3.A description
 
-4. list of ingredients
+4.A list of ingredients
 
-5. price
+5.A price
 
 The solution of the challenge will have:
                                         -Classe with diffrent propreties,constuctor.
