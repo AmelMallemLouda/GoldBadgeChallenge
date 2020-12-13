@@ -11,7 +11,7 @@ namespace _03_BadgesUnitTestProject
 
 
         private BadgesRepo _repo;
-        private Badges _badges;
+       // private Badges _badges;
         [TestInitialize]// This method will run first.
         [TestMethod]
         public void Arrange()
@@ -20,26 +20,25 @@ namespace _03_BadgesUnitTestProject
             doors.Add("D6");
             doors.Add("D7");
             _repo = new BadgesRepo();
-            _badges = new Badges(1, doors);
+           Badges _badges = new Badges(1,doors);
             _repo.AddNewBadge(1,doors);
 
         }
         [TestMethod]
         public void AddNewBadge_ShouldNotGetNull()
         {
-           List<string> doors = new List<string>();
-            doors.Add("D6");
-            doors.Add("D7");
            
-            Badges newBadge = new Badges();
-           newBadge.BadgeId = 1;
-           newBadge.DoorName = doors;
-          
-            BadgesRepo badgerepo = new BadgesRepo();
-            badgerepo.AddNewBadge(1,doors);
-            Badges badge = badgerepo.GetBadgeById(1);
-            Assert.IsNotNull(badge);
-            
+            List<string> doors = new List<string>();
+            BadgesRepo repo = new BadgesRepo();
+            Badges badge = new Badges();
+
+            repo.AddNewBadge(badge.BadgeId,doors);
+
+            int expected = 1;
+            int actual = repo.GetAllBadges().Count;
+
+            Assert.AreEqual(expected, actual);
+
         }
         [TestMethod]
         public void GetAllBadges_ShouldNotGetNull()
@@ -52,22 +51,45 @@ namespace _03_BadgesUnitTestProject
         [TestMethod]
         public void UpdateBadges_shouldReturnTrue()
         {
-            List<string> door = new List<string>();
-            door.Add("D8");
-           
-            Badges newBadge = new Badges(3, door);
 
+            Badges badge=new Badges(1, new List<string>{ "A1","A2"});
+            Badges updatedBadge = new Badges(1, new List<string> { "D1", "D2" });
+            BadgesRepo _repo = new BadgesRepo();
+            _repo.AddNewBadge(1, new List<string>{ "A1","A2"});
+            _repo.UpdateBadges(1, updatedBadge);
+            Badges expected = updatedBadge;
+            Badges actual = badge;
+            Assert.AreNotEqual(expected, actual);
             
-            bool wasUpdated = _repo.UpdateBadges(1, newBadge);
-            Assert.IsTrue(wasUpdated);
         }
         [TestMethod]
         public void DeleteBadge_ShouldReturnTrue()
         {
-            Badges badges = new Badges();
-            badges.BadgeId = 1;
-            bool wasDeleted = _repo.DeleteBadge(1);
-            Assert.IsTrue(wasDeleted);
+            AddNewBadge_ShouldNotGetNull();// I need to have something to delete.
+            BadgesRepo repo = new BadgesRepo();
+            Badges badge = new Badges();
+            repo.DeleteBadge(badge.BadgeId);// Delete the badge that we already created.
+            int expected = 0;// We already have created one badge id we delete it we sould expect 0 badge.
+            int actual = repo.GetAllBadges().Count;
+            Assert.AreEqual(expected, actual);
+            
+
+
+        }
+
+        [TestMethod]
+        public void GetBadgeById_ShouldNotGetNull()
+        {
+            //Arrange
+            BadgesRepo repo = new BadgesRepo();
+            Badges BadgebyId = new Badges(1, new List<string> { });
+            repo.AddNewBadge(1, new List<string> { });//Create a new badge with a specific ID
+            //Act
+            repo.GetBadgeById(BadgebyId.BadgeId);// get the new Badge that we ahve created with ID
+            int expected = 1;// the ID  to use to get the badge
+            int actual = BadgebyId.BadgeId;// it should be 1.
+            //Assert
+            Assert.AreEqual(expected, actual);
         }
     }
 }
