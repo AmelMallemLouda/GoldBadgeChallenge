@@ -3,8 +3,10 @@ C:\Users\Louda\source\repos\01_CafeConsoleApp\03_BadgesUnitTestProject\bin\Debug
 C:\Users\Louda\source\repos\01_CafeConsoleApp\03_BadgesUnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
 C:\Users\Louda\source\repos\01_CafeConsoleApp\03_BadgesUnitTestProject\bin\Debug\03_BadgesUnitTestProject.dll
 C:\Users\Louda\source\repos\01_CafeConsoleApp\03_BadgesUnitTestProject\bin\Debug\03_BadgesUnitTestProject.pdb
+C:\Users\Louda\source\repos\01_CafeConsoleApp\03_BadgesUnitTestProject\bin\Debug\03_BadgesClassLibrary.dll
 C:\Users\Louda\source\repos\01_CafeConsoleApp\03_BadgesUnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
 C:\Users\Louda\source\repos\01_CafeConsoleApp\03_BadgesUnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\Louda\source\repos\01_CafeConsoleApp\03_BadgesUnitTestProject\bin\Debug\03_BadgesClassLibrary.pdb
 C:\Users\Louda\source\repos\01_CafeConsoleApp\03_BadgesUnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
 C:\Users\Louda\source\repos\01_CafeConsoleApp\03_BadgesUnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
 C:\Users\Louda\source\repos\01_CafeConsoleApp\03_BadgesUnitTestProject\obj\Debug\03_BadgesUnitTestProject.csprojAssemblyReference.cache

@@ -20,21 +20,7 @@ namespace _03_BadgesClassLibrary
           
           
         }
-        //Create Door
-        // public void CreatDoor(Badges door)
-        //{
-        //   List< Badges> newdoor = new List<Badges>();
-        //    newdoor.Add(door);
-        //}
-
-        ////Delete Door
-
-        //public void DeleteDoor(Badges door)
-        //{
-        //    List<Badges> deletedoor = new List<Badges>();
-        //    deletedoor.Remove(door);
-
-        //}
+        
         //Read
         public Dictionary<int,List<string>> GetAllBadges()
         {
