@@ -92,8 +92,8 @@ namespace _01_CafeConsoleApp
             //List of ingredient
 
             Console.WriteLine("Enter the ingredients of the meal");
-            Ingredients.Add (Console.ReadLine());
-
+            Ingredients.Add(Console.ReadLine());
+            _cafe.Ingredients = Ingredients;
             //Price
             Console.WriteLine("Enter the price of the new meal");
             string doubleAsString= Console.ReadLine();
@@ -143,11 +143,13 @@ namespace _01_CafeConsoleApp
 
 
 
-            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.ForegroundColor = ConsoleColor.DarkMagenta;
             Console.WriteLine($"{"Meal Name:",-20}{"Meal number:",-20}{"Description:",-45}{"Price:",-11}{"Ingredients:"}");
+            Console.ResetColor();
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("=============================================================================================================================================================\n");
             Console.ResetColor();
-            foreach(Cafe item in listofitems)// Display each proprety of the cafe class
+            foreach (Cafe item in listofitems)// Display each proprety of the cafe class
             {
 
                 foreach (string x in item.Ingredients)// to  pull and display my list of strings which is my ingredients.

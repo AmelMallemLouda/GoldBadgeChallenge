@@ -11,8 +11,8 @@ namespace _03_BadgesClassLibrary
         // Create a new Badge
        
            public  Dictionary<int, List<string>> _badges = new Dictionary<int, List<string>>();
-           public List< Badges>badgesList = new List<Badges>();
-        
+           public List< Badges>badgelist = new List<Badges>();
+           public Badges badges = new Badges();
           
         //Create
         public void AddNewBadge(int badgeid,List<string>doors)
@@ -43,35 +43,12 @@ namespace _03_BadgesClassLibrary
                 return false;
             }
         }
-        //Delete
         
-        public bool DeleteBadge(int badgeid)
-        {
-
-            Badges badgeDeleted = GetBadgeById(badgeid);
-            if (badgeDeleted == null)
-            {
-               return false;
-            }
-            int initialCount = _badges.Count;
-            _badges.Remove(badgeid);
-            if (initialCount > _badges.Count)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-
-        }
-        
-
-
+   
 
         public Badges GetBadgeById(int id)
         {
-            foreach (Badges badge in badgesList)
+            foreach (Badges badge in badgelist)
             {
                 if (badge.BadgeId == id)
                     return badge;
