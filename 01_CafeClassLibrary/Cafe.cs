@@ -11,12 +11,12 @@ namespace _01_CafeClassLibrary
         public int MealNumber { get; set; }
         public string MealName { get; set; }
         public string Description { get; set; }
-        public string Ingredients { get; set; }
+        public List<string> Ingredients { get; set; }
         public double Price{ get; set; }
 
         public Cafe() { }
 
-        public Cafe(string mealname, string description, int mealnumber, double price,string ingredients)
+        public Cafe(string mealname, string description, int mealnumber, double price,List<string> ingredients)
         {
             MealNumber = mealnumber;
             MealName = mealname;

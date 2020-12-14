@@ -25,6 +25,7 @@ namespace _01_CafeConsoleApp
             while (KeepRunning)
             {
                 Console.WriteLine("Select a menu Option:\n" +
+              
                     "     " + "1.Create a new menu item.\n" +
                     "     " + "2.Delete a menu item.\n" +
                     "     " + "3.Update the menu item.\n" +
@@ -72,6 +73,7 @@ namespace _01_CafeConsoleApp
         //create a new menu item
         public void CreateMenuItem()
         {
+            List<string> Ingredients = new List<string>();
             //MealName
 
             Console.WriteLine("Enter the name of the new meal");
@@ -90,7 +92,7 @@ namespace _01_CafeConsoleApp
             //List of ingredient
 
             Console.WriteLine("Enter the ingredients of the meal");
-            _cafe.Ingredients = Console.ReadLine();
+            Ingredients.Add (Console.ReadLine());
 
             //Price
             Console.WriteLine("Enter the price of the new meal");
@@ -132,14 +134,30 @@ namespace _01_CafeConsoleApp
 
         public void DisplayAllItems()
         {
+
+
+
+
+
             List<Cafe> listofitems = _caferepo.GetMenuItems();
-            foreach(Cafe item in listofitems)
+
+
+
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine($"{"Meal Name:",-20}{"Meal number:",-20}{"Description:",-45}{"Price:",-11}{"Ingredients:"}");
+            Console.WriteLine("=============================================================================================================================================================\n");
+            Console.ResetColor();
+            foreach(Cafe item in listofitems)// Display each proprety of the cafe class
             {
-                Console.WriteLine($"Meal Name:{item.MealName}\n" +
-                    $"Meal number:{item.MealNumber}\n" +
-                    $"Description:{item.Description}\n" +
-                    $"Ingredients:{item.Ingredients}\n" +
-                    $"Price:${item.Price}\n");
+
+                foreach (string x in item.Ingredients)// to  pull and display my list of strings which is my ingredients.
+                {
+
+
+
+                    Console.WriteLine($"{item.MealName,-20}{item.MealNumber,-20}{item.Description,-45}{"$"}{item.Price,-10}-{ x}\n");
+                   
+                }
             }
         }
         //Update a menu item
@@ -148,6 +166,7 @@ namespace _01_CafeConsoleApp
 
         {
 
+            List<string> Ingredient = new List<string>();
             // Display our Menu
             DisplayAllItems();
 
@@ -176,7 +195,11 @@ namespace _01_CafeConsoleApp
             //List of ingredient
 
             Console.WriteLine("Enter the new ingredients of the item\n");
-            newItem.Ingredients = Console.ReadLine();
+            string MyList = Console.ReadLine();
+            Ingredient.Add(MyList);
+            _cafe.Ingredients = Ingredient;
+            
+
 
             //Price
             Console.WriteLine("Enter the  new price of the item\n");
@@ -207,9 +230,13 @@ namespace _01_CafeConsoleApp
         private void SeedItemList()
         {
             
-            Cafe Espresso = new Cafe("Espresso", "full-flavored concentrated form of coffe that is served in shots", 1, 3, "Coffe beans");
-            Cafe Latte = new Cafe("Latte", "espresso mixed with hot or steamed milk", 2, 1.5, "milk,espresso,thin layer of foam");
-            Cafe Donuts = new Cafe("Donuts", "Fried dough connection or desert food", 3,2.5, "flour,baking powder,salt,liquid,eggs,milk,sugar,some flavors");
+            Cafe Espresso = new Cafe("Espresso", "full-flavored concentrated form of coffe", 1, 3, new List<string>{"Coffe beans"});
+            Cafe Latte = new Cafe("Latte", "espresso mixed with hot or steamed milk", 2, 1.5,new List<string> {"milk,espresso," +
+                "thin layer of foam"});
+            Cafe Donuts = new Cafe("Donuts", "Fried dough connection or desert food", 3,2.5, new List<string> {"flour,baking powder" +
+                ",salt,liquid," +
+                "eggs,milk,sugar" +
+                ",some flavors"});
             _caferepo.AddItemToMenu(Espresso);
             _caferepo.AddItemToMenu(Latte);
             _caferepo.AddItemToMenu(Donuts);
