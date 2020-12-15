@@ -67,6 +67,7 @@ namespace _02_ClaimsConsoleApp
                 }
                
                 Console.Clear();
+               
             }
 
         }
@@ -80,7 +81,7 @@ namespace _02_ClaimsConsoleApp
             content.ID = int.Parse(Console.ReadLine());
 
 
-            Console.WriteLine("Enter The Claim Type:\n" +
+            Console.WriteLine("Enter The Claim Type(1,2,3):\n" +
                 "1.Car\n" +
                 "2.Home\n" +
                 "3.Theft\n");
@@ -95,16 +96,18 @@ namespace _02_ClaimsConsoleApp
             content.ClaimAmount = double.Parse(Console.ReadLine());
 
 
-            Console.WriteLine("Enter The Date Of Accident:");
+            Console.WriteLine("Enter The Date Of Accident/(Month/Day/Year):");
             content.DateOfIncident = DateTime.Parse(Console.ReadLine());
 
-            Console.WriteLine("Enter The Date of Claim:");
+            Console.WriteLine("Enter The Date of Claim/(Month/Day/Year):");
             content.DateOfClaim = DateTime.Parse(Console.ReadLine());
 
  
             _claimsrepo.AddClaimToList(content);
-
-
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
+            Console.WriteLine("Press any key to continue\n");
+            Console.ResetColor();
+            Console.ReadKey();
         }
 
         
@@ -179,6 +182,8 @@ namespace _02_ClaimsConsoleApp
             }
                 Console.ReadLine();
         }
+
+        
       
 
    

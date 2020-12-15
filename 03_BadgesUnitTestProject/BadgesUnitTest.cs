@@ -62,20 +62,7 @@ namespace _03_BadgesUnitTestProject
             Assert.AreNotEqual(expected, actual);
             
         }
-        [TestMethod]
-        public void DeleteBadge_ShouldReturnTrue()
-        {
-            AddNewBadge_ShouldNotGetNull();// I need to have something to delete.
-            BadgesRepo repo = new BadgesRepo();
-            Badges badge = new Badges();
-            repo.DeleteBadge(badge.BadgeId);// Delete the badge that we already created.
-            int expected = 0;// We already have created one badge id we delete it we sould expect 0 badge.
-            int actual = repo.GetAllBadges().Count;
-            Assert.AreEqual(expected, actual);
-            
-
-
-        }
+        
 
         [TestMethod]
         public void GetBadgeById_ShouldNotGetNull()

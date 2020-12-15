@@ -28,7 +28,9 @@ namespace _03_BadgesConsoleApp
              Console.WriteLine("Choose a menu option:\n" +
                 "1.Add a badge.\n" +
                 "2.Edit a badge.\n" +
-                "3.List all badges.\n");
+                "3.List all badges.\n" +
+                "4.Exit.");
+                
 
                 string input = Console.ReadLine();
 
@@ -43,12 +45,17 @@ namespace _03_BadgesConsoleApp
                     case "3":
                         DisplayAllBadges();
                         break;
+
                     case "4":
                         keepRunning = false;
+                
                         break;
+                    default:
+                        Console.WriteLine("Please enter a valid number");
+                        break;
+  
                 }
-            Console.WriteLine("Press any Key to continue");
-            Console.ReadKey();
+           
             Console.Clear();
             }
         }
@@ -58,7 +65,7 @@ namespace _03_BadgesConsoleApp
 
         public void AddNewBadgeToList()
         {
-
+            Console.Clear();
             List<string> doorlist = new List<string>();
             Badges badge = new Badges();
 
@@ -76,7 +83,7 @@ namespace _03_BadgesConsoleApp
                 Console.WriteLine("List a door that badge needs access to:\n");
                 doorlist.Add(Console.ReadLine());
 
-                Console.WriteLine("Any other doors this badge needs access to? Yes or No");
+                Console.WriteLine("Any other doors this badge needs access to? Yes/No ");
                 string anyotherdoor = Console.ReadLine().ToLower();
                
                 if (anyotherdoor == "no")
@@ -130,12 +137,15 @@ namespace _03_BadgesConsoleApp
 
             }
 
+                Console.WriteLine("Press any Key to continue");
+                Console.ReadKey();
 
         }
 
 
         public void UpdateBadge()
         {
+            Console.Clear();
             DisplayAllBadges();
            
             Console.WriteLine("What do you want to do ?\n" +
@@ -168,23 +178,9 @@ namespace _03_BadgesConsoleApp
             
            
 
-           // bool addingDoors = true;
-           // while (addingDoors)
-            //{
-             //   Console.WriteLine("List a door that badge needs access to:\n");
-             //   string input = (Console.ReadLine());
-               // adddoor.Add(input);
-                
-             // badge.DoorName=adddoor ;
-
-               
-
-
-          //  }
            
-
-          //  UpdateBadge();
         }
+
       
 
         public void SeeDListOfBadges()

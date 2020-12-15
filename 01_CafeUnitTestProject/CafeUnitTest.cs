@@ -19,7 +19,7 @@ namespace _01_CafeUnitTestProject
             _repo = new CafeRepo();// Accessible for all methods
 
             //Use our overloaded constructor . New up an istance with some values
-            _cafe = new Cafe("espresso", "full-flavored concentrated form of coffe that is served in shots", 1, 3, "Coffe beans");
+            _cafe = new Cafe("espresso", "full-flavored concentrated form of coffe that is served in shots", 1, 3, new List<string>{"Coffe beans"});
 
             _repo.AddItemToMenu(_cafe);// added _cafe to the menu(we can see that in any method)
 
@@ -55,7 +55,7 @@ namespace _01_CafeUnitTestProject
         public void UpdateExistingContent_ShouldReturnTrue()
         {
             //Arrange
-            Cafe newCafe = new Cafe("Espresso", "full-flavored concentrated form of coffe that is served in shots", 1, 4, "Coffe beans");
+            Cafe newCafe = new Cafe("Espresso", "full-flavored concentrated form of coffe that is served in shots", 1, 4, new List<string> { "Coffe beans" });
 
             //Act
             bool updateResult = _repo.UpdateItem("espresso", newCafe);
