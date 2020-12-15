@@ -88,7 +88,7 @@ namespace _03_BadgesConsoleApp
                
                 if (anyotherdoor == "no")
                 {
-                    addingDoors = false;
+                  
                     break;
                 }
               
@@ -150,12 +150,14 @@ namespace _03_BadgesConsoleApp
            
             Console.WriteLine("What do you want to do ?\n" +
                 "1.Add a door to a badge\n" + 
-                "2.Remove a door to a badge");
+                "2.Remove a door from a badge");
             string input = Console.ReadLine();
             switch(input)
             {
                 case "1":
                     AddDoorToBadge();
+                    break;
+                case "2":
                     break;
             }
         }
