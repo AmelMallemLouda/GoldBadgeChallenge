@@ -18,7 +18,7 @@ The solution of the challenge will have: Classe with diffrent propreties,constuc
 
 Challenge 2:Komodo Claims Department. 
 
-Komodo allows an insurance claim to be made up to 30 days after an incident took place. If the claim is not in the proper time limit, it is not valid, the claim type could be, home, car or theft.
+Komodo allows an insurance claim to be made up to 30 days after an incident took place. If the claim is not in the proper time limit, it won't be valid, the claim type could be, home, car or theft.
 The Claim munu will be including:
 
 1. See all claims
