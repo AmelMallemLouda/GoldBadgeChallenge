@@ -21,7 +21,7 @@ namespace _03_BadgesUnitTestProject
             doors.Add("D7");
             _repo = new BadgesRepo();
            Badges _badges = new Badges(1,doors);
-            _repo.AddNewBadge(1,doors);
+            _repo.CreateNewBadge(1,doors);
 
         }
         [TestMethod]
@@ -32,7 +32,7 @@ namespace _03_BadgesUnitTestProject
             BadgesRepo repo = new BadgesRepo();
             Badges badge = new Badges();
 
-            repo.AddNewBadge(badge.BadgeId,doors);
+            repo.CreateNewBadge(badge.BadgeId,doors);
 
             int expected = 1;
             int actual = repo.GetAllBadges().Count;
@@ -55,7 +55,7 @@ namespace _03_BadgesUnitTestProject
             Badges badge=new Badges(1, new List<string>{ "A1","A2"});
             Badges updatedBadge = new Badges(1, new List<string> { "D1", "D2" });
             BadgesRepo _repo = new BadgesRepo();
-            _repo.AddNewBadge(1, new List<string>{ "A1","A2"});
+            _repo.CreateNewBadge(1, new List<string>{ "A1","A2"});
             _repo.UpdateBadges(1, updatedBadge);
             Badges expected = updatedBadge;
             Badges actual = badge;
@@ -70,7 +70,7 @@ namespace _03_BadgesUnitTestProject
             //Arrange
             BadgesRepo repo = new BadgesRepo();
             Badges BadgebyId = new Badges(1, new List<string> { });
-            repo.AddNewBadge(1, new List<string> { });//Create a new badge with a specific ID
+            repo.CreateNewBadge(1, new List<string> { });//Create a new badge with a specific ID
             //Act
             repo.GetBadgeById(BadgebyId.BadgeId);// get the new Badge that we ahve created with ID
             int expected = 1;// the ID  to use to get the badge

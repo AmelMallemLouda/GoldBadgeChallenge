@@ -9,10 +9,10 @@ namespace _02_ClaimsClassLibrary
     public class ClaimsRepo
     {
        private Queue< Claims> _listOfclaim = new Queue<Claims>();
-        private Claims _claims = new Claims();
+       
 
         //Create a claim
-        public void AddClaimToList( Claims content)
+        public void CreateClaims( Claims content)
         {
             _listOfclaim.Enqueue(content);
         }

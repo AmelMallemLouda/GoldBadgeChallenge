@@ -16,11 +16,12 @@ namespace _02_ClaimsUnitTestProject
 
         [TestMethod]
         public void Arrange()
-        {
+        {  
+             // Give new instance to _claimsRepo and _claims
             _claimsRepo = new ClaimsRepo();// Accessible for all methods
             //Use our overloaded constructor . New up an istance with some values.
             _claims = new Claims(1, ClaimType.Car, "Car accident on 465.", 400.0, DateTime.Parse("04/25/2019"), DateTime.Parse("04/25/2020"));
-            _claimsRepo.AddClaimToList(_claims);// added _claims to the menu(we can see that in any method);
+            _claimsRepo.CreateClaims(_claims);// added _claims to the menu(we can see that in any method);
         }
         [TestMethod]
         public void AddClaimToList_ShouldGetNotNull()
@@ -29,7 +30,7 @@ namespace _02_ClaimsUnitTestProject
             Claims claim = new Claims();
             claim.ID = 1;
             ClaimsRepo claimrepo = new ClaimsRepo();
-            claimrepo.AddClaimToList(claim);
+            claimrepo.CreateClaims(claim);
             Claims claimMenu = claimrepo.GetClaimById(1);
             Assert.IsNotNull(claimMenu);
         }
@@ -52,7 +53,8 @@ namespace _02_ClaimsUnitTestProject
             //Arrange
             Claims Newclaim = new Claims(2, ClaimType.Car, "Car accident on 465.", 400.0, DateTime.Parse("04/26/2019"), DateTime.Parse("04/25/2020"));
             //Act
-            bool updateClaim = _claimsRepo.UpdateClaim(1, Newclaim);
+            bool updateClaim = _claimsRepo.UpdateClaim(1, Newclaim); 
+            //Assert
             Assert.IsTrue(updateClaim);
 
         }

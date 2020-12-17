@@ -27,11 +27,15 @@ namespace _02_ClaimsConsoleApp
             bool KeepRunning = true;
             while (KeepRunning)
             {
+                Console.ForegroundColor = ConsoleColor.DarkGreen;
+                Console.WriteLine("                                        Komodo Claims Department");
+                Console.ResetColor();
+                Console.WriteLine("                                        -------------------------\n");
                 Console.WriteLine("Choose a menu item:\n" +
-               "       " + "1.See all claims.\n" +
-               "       " + "2.Take care of the next claim.\n" +
-               "       " + "3.Enter a new claim.\n" +
-               "       " + "4.Exit.");
+               "      1.See all claims.\n" +
+               "      2.Take care of the next claim.\n" +
+               "      3.Enter a new claim.\n" +
+               "      4.Exit.");
 
                 string input = Console.ReadLine();
 
@@ -89,6 +93,7 @@ namespace _02_ClaimsConsoleApp
             int TypeAsInt = int.Parse(typeAsString);
             content.TypeOfClaim = (ClaimType)TypeAsInt;
 
+
             Console.WriteLine("Enter The Claim Description:");
             content.Description = Console.ReadLine();
 
@@ -103,7 +108,7 @@ namespace _02_ClaimsConsoleApp
             content.DateOfClaim = DateTime.Parse(Console.ReadLine());
 
  
-            _claimsrepo.AddClaimToList(content);
+            _claimsrepo.CreateClaims(content);
             Console.ForegroundColor = ConsoleColor.DarkYellow;
             Console.WriteLine("Press any key to continue\n");
             Console.ResetColor();
@@ -119,7 +124,7 @@ namespace _02_ClaimsConsoleApp
         {
             Queue<Claims> claims = _claimsrepo.GetAllClaims();
             Console.ForegroundColor = ConsoleColor.Cyan;
-            Console.WriteLine($"{"ClaimID",-10}{"Type",-10}{"Description",-24}                  {"Amount",-15}{"DateOfAccident",-25}{"DateOfClaim",-25}{"IsValid",-15}");
+            Console.WriteLine($"{"ClaimID",-10}{"Type",-10}{"Description",-24}                  {"Amount",-15}{"DateOfAccident",-25}{"DateOfClaim",-25}{"IsValid"}");
             Console.ResetColor();
 
             Console.ForegroundColor = ConsoleColor.DarkMagenta;
@@ -128,7 +133,7 @@ namespace _02_ClaimsConsoleApp
 
             foreach (Claims claim in claims)
             {
-                Console.WriteLine($"{claim.ID,-10}{claim.TypeOfClaim,-10}{claim.Description,-25}                 ${claim.ClaimAmount,-15}{claim.DateOfIncident.ToShortDateString(),-25}{claim.DateOfClaim.ToShortDateString(),-25}{claim.IsValid,-15}");
+                Console.WriteLine($"{claim.ID,-10}{claim.TypeOfClaim,-10}{claim.Description,-25}                 ${claim.ClaimAmount,-15}{claim.DateOfIncident.ToShortDateString(),-25}{claim.DateOfClaim.ToShortDateString(),-25}{claim.IsValid}");
             }
 
             Console.ForegroundColor = ConsoleColor.DarkGreen;
@@ -139,7 +144,7 @@ namespace _02_ClaimsConsoleApp
 
 
         }
-        //next in queue
+        //Next claim in queue
         public void DealWithClaim()
         {
             Console.Clear();
@@ -149,7 +154,7 @@ namespace _02_ClaimsConsoleApp
             Console.ResetColor();
             Queue<Claims> newList = _claimsrepo.GetAllClaims();
               Claims nextClaim = newList.Peek();
-
+            //Display the claim that the use would like to deal with
             Console.WriteLine("     "+$"-ID: {nextClaim.ID}\n" +
                "     " +$"-Type: {nextClaim.TypeOfClaim}\n" +
                 "     "+$"-Description: {nextClaim.Description}\n" +
@@ -182,12 +187,6 @@ namespace _02_ClaimsConsoleApp
             }
                 Console.ReadLine();
         }
-
-        
-      
-
-   
-
         private void SeedContentList()
         {
 
@@ -198,9 +197,9 @@ namespace _02_ClaimsConsoleApp
             Claims claim1 = new Claims(1, ClaimType.Car, "Car accident on 465.",   400.0, DateTime.Parse("04/25/2019"), DateTime.Parse("04/25/2020"));
             Claims claim2 = new Claims(2, ClaimType.Home, "House fire in kitchen.",50000.00, DateTime.Parse("04/24/2020"), DateTime.Parse("04/25/2020"));
             Claims claim3 = new Claims(3, ClaimType.Theft, "Stolen pancakes.",     4.5, DateTime.Parse("04/25/2019"), DateTime.Parse("04/25/2020"));
-            _claimsrepo.AddClaimToList(claim1); 
-            _claimsrepo.AddClaimToList(claim2);
-            _claimsrepo.AddClaimToList(claim3);
+            _claimsrepo.CreateClaims(claim1); 
+            _claimsrepo.CreateClaims(claim2);
+            _claimsrepo.CreateClaims(claim3);
 
         }
 

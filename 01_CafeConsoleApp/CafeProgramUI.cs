@@ -24,6 +24,10 @@ namespace _01_CafeConsoleApp
             bool KeepRunning = true;
             while (KeepRunning)
             {
+                Console.ForegroundColor = ConsoleColor.DarkGreen;
+                Console.WriteLine("                                            Komodo Cafe");
+                Console.ResetColor();
+                Console.WriteLine("                                        -------------------\n");
                 Console.WriteLine("Select a menu Option:\n" +
               
                     "     " + "1.Create a new menu item.\n" +
@@ -97,7 +101,7 @@ namespace _01_CafeConsoleApp
             //Price
             Console.WriteLine("Enter the price of the new meal");
             string doubleAsString= Console.ReadLine();
-            double doubleAsdouble = double.Parse(doubleAsString);
+            _cafe.Price = double.Parse(doubleAsString);
             
             Console.ForegroundColor = ConsoleColor.Green;
 
@@ -143,7 +147,7 @@ namespace _01_CafeConsoleApp
 
 
 
-            Console.ForegroundColor = ConsoleColor.DarkMagenta;
+            Console.ForegroundColor = ConsoleColor.DarkCyan;
             Console.WriteLine($"{"Meal Name:",-20}{"Meal number:",-20}{"Description:",-45}{"Price:",-11}{"Ingredients:"}");
             Console.ResetColor();
             Console.ForegroundColor = ConsoleColor.Yellow;
@@ -169,16 +173,17 @@ namespace _01_CafeConsoleApp
         {
 
             List<string> Ingredient = new List<string>();
+            Cafe newItem = new Cafe();
             // Display our Menu
             DisplayAllItems();
 
-            Cafe newItem = new Cafe();
 
             //Ask for the  Item to update
             Console.WriteLine("Enter the name of the item that you'd like to update.\n");
 
             //Get that item
             string oldname = Console.ReadLine();
+             newItem = _caferepo.GetMenuitemByName(oldname);
 
             //buit a new one
             Console.WriteLine("Enter the  new name of the item.\n");
@@ -197,33 +202,23 @@ namespace _01_CafeConsoleApp
             //List of ingredient
 
             Console.WriteLine("Enter the new ingredients of the item\n");
-            string MyList = Console.ReadLine();
-            Ingredient.Add(MyList);
-            _cafe.Ingredients = Ingredient;
-            
-
+        
+            Ingredient.Add(Console.ReadLine());
+            newItem.Ingredients = Ingredient;
 
             //Price
             Console.WriteLine("Enter the  new price of the item\n");
-           string doubleAsString = Console.ReadLine();
-            newItem.Price = double.Parse(doubleAsString);
+            newItem.Price = double.Parse(Console.ReadLine());
             
-            // Verify if it's updated
+            
 
-          bool wasUpdated=  _caferepo.UpdateItem(oldname, newItem);
-            if (wasUpdated)
-            {
+           _caferepo.UpdateItem(oldname, newItem);
+         
                 Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("Your item was successfully updated\n");
                
                 Console.ResetColor();
-            }
-            else
-            {
-                Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine("Could not Update the item.");
-                Console.ResetColor();
-            }
+            
 
         }
 
@@ -232,10 +227,10 @@ namespace _01_CafeConsoleApp
         private void SeedItemList()
         {
             
-            Cafe Espresso = new Cafe("Espresso", "full-flavored concentrated form of coffe", 1, 3, new List<string>{"Coffe beans"});
-            Cafe Latte = new Cafe("Latte", "espresso mixed with hot or steamed milk", 2, 1.5,new List<string> {"milk,espresso," +
+             Cafe Espresso = new Cafe("Espresso", "full-flavored concentrated form of coffe", 1, 3, new List<string>{"Coffe beans"});
+             Cafe Latte = new Cafe("Latte", "espresso mixed with hot or steamed milk", 2, 1.5,new List<string> {"milk,espresso," +
                 "thin layer of foam"});
-            Cafe Donuts = new Cafe("Donuts", "Fried dough connection or desert food", 3,2.5, new List<string> {"flour,baking powder" +
+             Cafe Donuts = new Cafe("Donuts", "Fried dough connection or desert food", 3,2.5, new List<string> {"flour,baking powder" +
                 ",salt,liquid," +
                 "eggs,milk,sugar" +
                 ",some flavors"});

@@ -1,6 +1,6 @@
 C:\Users\Louda\source\repos\01_CafeConsoleApp\03_BadgesClassLibrary\bin\Debug\03_BadgesClassLibrary.dll
 C:\Users\Louda\source\repos\01_CafeConsoleApp\03_BadgesClassLibrary\bin\Debug\03_BadgesClassLibrary.pdb
+C:\Users\Louda\source\repos\01_CafeConsoleApp\03_BadgesClassLibrary\obj\Debug\03_BadgesClassLibrary.csprojAssemblyReference.cache
 C:\Users\Louda\source\repos\01_CafeConsoleApp\03_BadgesClassLibrary\obj\Debug\03_BadgesClassLibrary.csproj.CoreCompileInputs.cache
 C:\Users\Louda\source\repos\01_CafeConsoleApp\03_BadgesClassLibrary\obj\Debug\03_BadgesClassLibrary.dll
 C:\Users\Louda\source\repos\01_CafeConsoleApp\03_BadgesClassLibrary\obj\Debug\03_BadgesClassLibrary.pdb
-C:\Users\Louda\source\repos\01_CafeConsoleApp\03_BadgesClassLibrary\obj\Debug\03_BadgesClassLibrary.csprojAssemblyReference.cache
