@@ -8,6 +8,7 @@ namespace _02_ClaimsUnitTestProject
     [TestClass]
     public class ClaimsUnitTest
     {
+        //declare  _claimsRepo and _claims
         private ClaimsRepo _claimsRepo;
         private Claims _claims;
 
@@ -17,9 +18,9 @@ namespace _02_ClaimsUnitTestProject
         [TestMethod]
         public void Arrange()
         {  
-             // Give new instance to _claimsRepo and _claims
+             // Assign an instance to _claimsRepo and _claims
             _claimsRepo = new ClaimsRepo();// Accessible for all methods
-            //Use our overloaded constructor . New up an istance with some values.
+            //  New up an istance with some values.
             _claims = new Claims(1, ClaimType.Car, "Car accident on 465.", 400.0, DateTime.Parse("04/25/2019"), DateTime.Parse("04/25/2020"));
             _claimsRepo.CreateClaims(_claims);// added _claims to the menu(we can see that in any method);
         }
@@ -30,8 +31,10 @@ namespace _02_ClaimsUnitTestProject
             Claims claim = new Claims();
             claim.ID = 1;
             ClaimsRepo claimrepo = new ClaimsRepo();
+            //Act
             claimrepo.CreateClaims(claim);
             Claims claimMenu = claimrepo.GetClaimById(1);
+            //Assert
             Assert.IsNotNull(claimMenu);
         }
 

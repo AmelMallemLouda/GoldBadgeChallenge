@@ -38,7 +38,7 @@ namespace _01_CafeUnitTestProject
             cafe.MealName = "coffe";
             CafeRepo caferepo = new CafeRepo();
 
-            //Act-->Get/Rum the code we want
+            //Act-->Get/Run the code we want
 
             caferepo.AddItemToMenu(cafe);
 
@@ -70,7 +70,7 @@ namespace _01_CafeUnitTestProject
         public void RemoveFromMenu_ShouldReturnTrue()
         {
 
-            bool wasDeleted = _repo.RemoveFromMenu(_cafe.MealName);
+            bool wasDeleted = _repo.RemoveFromMenu("espresso");
             Assert.IsTrue(wasDeleted);
         }
 
