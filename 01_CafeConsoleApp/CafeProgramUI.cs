@@ -132,7 +132,7 @@ namespace _01_CafeConsoleApp
             {
                 Console.WriteLine("The item could not be deleted");
             }
-            _caferepo.RemoveFromMenu(input);
+           
         }
         //See the list of all items
 
@@ -212,7 +212,7 @@ namespace _01_CafeConsoleApp
             
             
 
-           _caferepo.UpdateItem(oldname, newItem);
+           _caferepo.UpdateItem(oldname, newItem);//Get my olditem and update it to become my newitem
          
                 Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("Your item was successfully updated\n");
